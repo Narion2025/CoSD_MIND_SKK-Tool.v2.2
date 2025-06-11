@@ -27,6 +27,9 @@ SKK_Bedeutungsfelder:
       - "keim"
       - "drang"
       - "sehnsucht"
+      - "intuition"
+      - "vorgefühl"
+      - "vorahnung"
       - "zwischen"
       - "dazwischen"
       - "schwelle"
@@ -57,6 +60,9 @@ SKK_Bedeutungsfelder:
       - "fokussieren"
       - "intensivieren"
       - "verstärken"
+      - "sog"
+      - "wirbel"
+      - "magnet"
     warnung_hyperfokus: 10  # Anziehungskraft-Schwelle
     lebensdauer: "2 stunden"
     
@@ -76,6 +82,9 @@ SKK_Bedeutungsfelder:
       - "ordnung"
       - "system"
       - "regel"
+      - "verfestigt"
+      - "starr"
+      - "blockiert"
     rigidity_warning: 0.8  # Warnung bei zu starrer Struktur
     lebensdauer: "24 stunden"
     
@@ -96,8 +105,19 @@ SKK_Bedeutungsfelder:
       - "integration"
       - "verschmelzung"
       - "synthese"
+      - "einsicht"
+      - "erleuchtung"
+      - "durchblick"
     klarheit: 0.9
     lebensdauer: "permanent"
+
+  Metamarker:
+    definition: "Resonanzcluster bei schneller Abfolge von Flügeln und Strudeln"
+    kombination:
+      fluegel_min: 2
+      strudel_min: 1
+      timeframe_sec: 60
+    bedeutung: "Signalisiert eine besonders aktive Bedeutungsbildung"
 ```
 
 ### drift_axes_extended.yaml
