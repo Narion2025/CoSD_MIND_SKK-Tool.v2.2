@@ -8,26 +8,39 @@ skk_system:
 bedeutungsfelder:
   flügel:
     description: "Entstehende Bedeutungen im Zwischenraum"
-    markers: ["ahnung", "gefühl", "spüre", "entsteh", "drang", "sehnsucht"]
+    markers: ["ahnung", "gefühl", "spüre", "entsteh", "drang", "sehnsucht", "intuition", "vorgefühl", "vorahnung"]
     threshold: 1  # Minimum 1 Marker für Flügel
+    trigger_description: "Aktiviert bereits bei einem dieser Schlüsselwörter"
     retention: "15min"
     
   strudel:
     description: "Anziehungspunkte für emergente Bedeutungen"
+    markers: ["verdichten", "anziehen", "sammeln", "konzentrieren", "intensivieren", "verstärken", "sog", "wirbel", "magnet"]
     formation: "2+ Flügel"
-    hyperfokus_threshold: 10  # Warnung bei zu starker Anziehung
+    hyperfokus_threshold: 8  # Warnung bei zu starker Anziehung
+    trigger_description: "Wird ausgelöst, wenn mehrere Flügel im selben Abschnitt auftreten"
     retention: "2h"
     
   knoten:
     description: "Verfestigte Strukturen"
+    markers: ["struktur", "form", "fest", "stabil", "rahmen", "ordnung", "system", "regel", "verfestigt", "starr", "blockiert"]
     formation: "Strudel mit Anziehungskraft > 5"
     rigidity_warning: 0.8  # Warnung bei zu starrer Struktur
+    trigger_description: "Greift wenn Strudel stark genug sind, um feste Muster zu bilden"
     retention: "24h"
     
   kristalle:
     description: "Integrierte Erkenntnisse (Aha-Momente)"
+    markers: ["aha", "erkenntnis", "klar", "verstehe", "licht", "durchbruch", "integration", "synthese", "einsicht", "erleuchtung", "durchblick"]
     formation: "2+ Knoten"
     clarity_threshold: 0.8
+    trigger_description: "Entsteht aus der Verbindung mehrerer Knoten"
+
+  metamarker:
+    description: "Resonanzcluster bei gehäuftem Auftreten von Flügeln und Strudeln"
+    fluegel_min: 2
+    strudel_min: 1
+    timeframe_sec: 60
     retention: "permanent"
 
 performance:
