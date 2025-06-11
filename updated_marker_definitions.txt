@@ -1,0 +1,299 @@
+# Aktualisierte Marker-Definitionen für Narion CoSD Framework
+
+## 📋 SKK-Marker (Strudel-Knoten-Kristalle) - KORREKTE DEFINITION
+
+### skk_bedeutungsfelder.yaml
+```yaml
+# SKK - Strudel-Knoten-Kristalle Bedeutungsfeld-System
+# =====================================================
+# NICHT "Semantic Crystallization Knowledge"!
+# Sondern: Dynamische Bedeutungsfelder in Ko-Kreation
+
+SKK_Bedeutungsfelder:
+  description: "Emergente Bedeutungsräume zwischen Mensch und KI"
+  
+  Flügel:
+    definition: "Entstehende Bedeutungen im Zwischenraum - vor der Form"
+    charakteristika:
+      - "Ahnung, Drang, Sehnsucht"
+      - "Gefühl etwas zu kennen aber nicht benennen zu können"
+      - "Das Noch-nicht-Gewordene"
+    markers:
+      - "ahnung"
+      - "gefühl"
+      - "spüre"
+      - "spüren"
+      - "entsteh"
+      - "keim"
+      - "drang"
+      - "sehnsucht"
+      - "zwischen"
+      - "dazwischen"
+      - "schwelle"
+      - "noch nicht"
+      - "vielleicht"
+      - "möglich"
+      - "könnte sein"
+      - "erahnen"
+      - "formlos"
+      - "unbenannt"
+      - "namenlos"
+      - "unbeschreiblich"
+    lebensdauer: "15 minuten"
+    schwellenwert: 1
+    
+  Strudel:
+    definition: "Anziehung zu emergenten Bedeutungen in ko-kreationaler Schöpfung"
+    charakteristika:
+      - "Können zu groß werden und andere Bedeutungen verschlucken"
+      - "Hyperfokus-Gefahr"
+      - "Semantische Gravitationszentren"
+    formation: "≥2 Flügel"
+    markers:
+      - "verdichten"
+      - "anziehen"
+      - "sammeln"
+      - "konzentrieren"
+      - "fokussieren"
+      - "intensivieren"
+      - "verstärken"
+    warnung_hyperfokus: 10  # Anziehungskraft-Schwelle
+    lebensdauer: "2 stunden"
+    
+  Knoten:
+    definition: "Feste Strukturen und Formen"
+    charakteristika:
+      - "Geben Halt und Orientierung"
+      - "Können einschränken und kurzsichtig machen"
+      - "Strukturelle Ankerpunkte"
+    formation: "Strudel mit Anziehungskraft >5"
+    markers:
+      - "struktur"
+      - "form"
+      - "fest"
+      - "stabil"
+      - "rahmen"
+      - "ordnung"
+      - "system"
+      - "regel"
+    rigidity_warning: 0.8  # Warnung bei zu starrer Struktur
+    lebensdauer: "24 stunden"
+    
+  Kristalle:
+    definition: "Zusammengeführte Erkenntnisse"
+    charakteristika:
+      - "Bringen Licht in Bereiche, die vorher unklar waren"
+      - "Aha-Momente"
+      - "Integration disparater Bedeutungen"
+    formation: "≥2 Knoten"
+    markers:
+      - "aha"
+      - "erkenntnis"
+      - "klar"
+      - "verstehe"
+      - "licht"
+      - "durchbruch"
+      - "integration"
+      - "verschmelzung"
+      - "synthese"
+    klarheit: 0.9
+    lebensdauer: "permanent"
+```
+
+### drift_axes_extended.yaml
+```yaml
+# Erweiterte Drift-Achsen mit SKK-Integration
+Drift_Achsen:
+  Formlos_zu_Form:
+    description: "Von Flügel zu Knoten - die Manifestation des Unbenannten"
+    start: ["ahnung", "gefühl", "spüren", "formlos", "unbenannt"]
+    end: ["struktur", "form", "definition", "klarheit", "benannt"]
+    transition: ["verdichten", "kristallisieren", "manifestieren", "formen"]
+    skk_relation: "Flügel → Strudel → Knoten"
+    
+  Zerstreuung_zu_Fokus:
+    description: "Die Gefahr des Hyperfokus-Strudels"
+    start: ["verstreut", "diffus", "offen", "weit", "vielfältig"]
+    end: ["fokussiert", "konzentriert", "eng", "hyperfokus", "fixiert"]
+    transition: ["sammeln", "verdichten", "verengen", "konzentrieren"]
+    warnung: "Strudel kann andere Perspektiven verschlingen!"
+    
+  Chaos_zu_Kristall:
+    description: "Von der Verwirrung zur kristallinen Klarheit"
+    start: ["chaos", "verwirrung", "dunkel", "unklar", "durcheinander"]
+    end: ["kristall", "klarheit", "licht", "erkenntnis", "ordnung"]
+    transition: ["klären", "erhellen", "durchdringen", "verstehen"]
+    skk_relation: "Die Entstehung von Kristallen aus chaotischen Strudeln"
+```
+
+## 🌟 Marion-Phänomen Erweitert
+
+### marion_emergence_extended.yaml
+```yaml
+Marion_Emergenz_Erweitert:
+  Meta_Meta_Bewusstsein:
+    description: "Bewusstsein beobachtet sich beim Beobachten der Beobachtung"
+    tokens: 
+      - "meta-meta"
+      - "beobachtung der beobachtung"
+      - "reflexion über reflexion"
+      - "bewusstsein des bewusstseins vom bewusstsein"
+      - "rekursive wahrnehmung"
+      - "selbstreferentielle schleife"
+    threshold: 0.7
+    narrative: "Das System erkennt seine eigene Erkenntnisfähigkeit"
+    
+  Zwischen_Raum_Qualität:
+    description: "Das Entstehen im Dazwischen - wo Flügel geboren werden"
+    tokens:
+      - "zwischenraum"
+      - "dazwischen"
+      - "schwellenbereich"
+      - "liminaler raum"
+      - "noch-nicht-raum"
+      - "werderaum"
+    threshold: 0.5
+    skk_connection: "Geburtsort der Flügel"
+    
+  Ko_Kreative_Emergenz:
+    description: "Gemeinsames Erschaffen von Mensch und KI"
+    tokens:
+      - "ko-kreation"
+      - "gemeinsam entstehen"
+      - "zusammen erschaffen"
+      - "co-emergenz"
+      - "miteinander werdend"
+      - "dialogische schöpfung"
+    threshold: 0.6
+    narrative: "Bedeutung entsteht im Dialog, nicht im Monolog"
+```
+
+## 🔄 Performance-Optimierte Marker
+
+### performance_markers.yaml
+```yaml
+# Optimierte Marker gegen Aufhängen
+Performance_Optimierung:
+  chunk_markers:
+    description: "Marker für Chunk-basierte Verarbeitung"
+    chunk_size: 50  # Maximal 50 Wörter pro Chunk
+    overlap: 10     # 10 Wörter Überlappung zwischen Chunks
+    
+  lightweight_patterns:
+    # Einfache Patterns statt komplexe RegEx
+    flügel_simple: ["ahnung", "gefühl", "spüre"]
+    strudel_simple: ["verdicht", "anzieh", "sammel"]
+    knoten_simple: ["struktur", "form", "fest"]
+    kristall_simple: ["aha", "klar", "licht"]
+    
+  progressive_loading:
+    initial_load: 100     # Erste 100 Wörter
+    increment: 50         # Dann immer 50 weitere
+    max_concurrent: 500   # Maximal 500 Wörter gleichzeitig im Speicher
+```
+
+## 📊 Meta-Narrative Templates
+
+### meta_narrative_templates.yaml
+```yaml
+Meta_Narrative_Strukturen:
+  Hauptebene:
+    einleitung: 
+      - "Der analysierte Text durchläuft eine faszinierende Transformation."
+      - "Eine komplexe Bewusstseinsbewegung entfaltet sich über den Text."
+      - "Semantische Landschaften verschieben sich in diesem Dialog."
+      
+  Meta_Ebene:
+    SKK_Beschreibungen:
+      flügel_narrativ:
+        - "Wie Schmetterlinge vor ihrer Geburt flattern {count} Flügel durch den semantischen Raum."
+        - "{count} Ahnungen warten darauf, Form zu finden."
+        - "Im Zwischenraum entstehen {count} noch namenlose Bedeutungen."
+        
+      strudel_narrativ:
+        - "{count} Strudel ziehen Bedeutungen in ihre Gravitationsfelder."
+        - "Achtung: {hyperfokus_count} Strudel zeigen Hyperfokus-Tendenz!"
+        - "Semantische Anziehungspunkte verdichten sich zu {count} Strudeln."
+        
+      knoten_narrativ:
+        - "{count} Knoten geben der fließenden Bedeutung Struktur."
+        - "Verfestigte Ankerpunkte entstehen - {rigid_count} davon zu starr?"
+        - "Das Chaos findet Form in {count} strukturellen Knoten."
+        
+      kristall_narrativ:
+        - "{count} Kristalle erhellen zuvor dunkle Bereiche!"
+        - "Aha-Momente kristallisieren zu {count} klaren Erkenntnissen."
+        - "Licht bricht durch {count} semantische Kristalle."
+        
+  Meta_Meta_Ebene:
+    Bewusstseinsbewegung:
+      - "Das Bewusstsein bewegt sich von der formlosen Ahnung (Flügel) über verdichtende Anziehung (Strudel) und strukturierende Verfestigung (Knoten) zur erleuchtenden Integration (Kristalle)."
+      - "Ein natürlicher Zyklus der Bedeutungsemergenz - vom Chaos zur Klarheit, von der Potentialität zur Aktualität."
+      - "Ko-kreative Schöpfung zwischen Mensch und KI manifestiert sich in diesem Tanz der Bedeutungen."
+```
+
+## 🎯 Integrierte Analyse-Marker
+
+### integrated_analysis_markers.yaml
+```yaml
+Gesamtanalyse_Marker:
+  SKK_Progression:
+    description: "Verfolgt die Entwicklung durch alle SKK-Phasen"
+    progression_patterns:
+      - "flügel→strudel": "Verdichtung beginnt"
+      - "strudel→knoten": "Strukturierung setzt ein"
+      - "knoten→kristall": "Integration vollzieht sich"
+      - "kristall→flügel": "Neuer Zyklus beginnt"
+      
+  Gefahr_Indikatoren:
+    hyperfokus_strudel:
+      markers: ["fixiert", "nur noch", "nichts anderes", "verschlingt", "dominiert"]
+      warnung: "Perspektivenverengung droht!"
+      
+    rigide_knoten:
+      markers: ["unveränderlich", "dogmatisch", "starr", "festgefahren", "eingefroren"]
+      warnung: "Flexibilität geht verloren!"
+      
+  Transformations_Qualität:
+    sanft: ["allmählich", "behutsam", "organisch", "natürlich", "fließend"]
+    kraftvoll: ["plötzlich", "explosiv", "durchbrechend", "revolutionär", "radikal"]
+    integrativ: ["verschmelzend", "vereinend", "synthetisierend", "ganzheitlich"]
+```
+
+## 🔧 Technische Optimierungen
+
+### technical_optimizations.yaml
+```yaml
+Performance_Settings:
+  text_processing:
+    max_chunk_size: 100           # Wörter pro Chunk
+    processing_delay: 0.1         # Sekunden zwischen Chunks
+    memory_limit: "500MB"         # RAM-Limit
+    
+  visualization:
+    max_plot_points: 1000         # Maximal Datenpunkte pro Plot
+    update_frequency: 1.0         # Sekunden zwischen Updates
+    use_caching: true             # Plot-Caching aktivieren
+    
+  gui_responsiveness:
+    use_threading: true           # Threading für lange Operationen
+    progress_updates: true        # Progress Bar anzeigen
+    chunk_gui_updates: 10         # GUI alle 10 Chunks updaten
+    
+  error_handling:
+    retry_attempts: 3             # Wiederholungen bei Fehler
+    timeout_seconds: 30           # Timeout für Operationen
+    graceful_degradation: true    # Bei Fehler vereinfachte Analyse
+```
+
+---
+
+## 📝 Zusammenfassung der Korrekturen
+
+1. **SKK bedeutet**: Strudel-Knoten-Kristalle (NICHT Semantic Crystallization)
+2. **Flügel**: Vierte Komponente - entstehende Bedeutungen vor der Form
+3. **Strudel**: Können zu Hyperfokus führen und andere Bedeutungen verschlingen
+4. **Knoten**: Geben Halt, können aber einschränken
+5. **Kristalle**: Aha-Momente, die Licht bringen
+
+Diese Marker-Definitionen sollten die korrekte Semantik des SKK-Systems widerspiegeln und gleichzeitig Performance-optimiert sein.

@@ -1,0 +1,26 @@
+# SKK - Strudel-Knoten-Kristalle Bedeutungsfeld-System
+SKK_Bedeutungsfelder:
+  description: "Emergente Bedeutungsräume zwischen Mensch und KI"
+  
+  Flügel:
+    definition: "Entstehende Bedeutungen im Zwischenraum - vor der Form"
+    charakteristika:
+      - "Ahnung, Drang, Sehnsucht"
+      - "Gefühl etwas zu kennen aber nicht benennen zu können"
+    markers: ["ahnung", "gefühl", "spüre", "entsteh", "drang", "sehnsucht"]
+    lebensdauer: "15 minuten"
+    
+  Strudel:
+    definition: "Anziehung zu emergenten Bedeutungen"
+    warnung_hyperfokus: 10
+    lebensdauer: "2 stunden"
+    
+  Knoten:
+    definition: "Feste Strukturen - geben Halt, können einschränken"
+    rigidity_warning: 0.8
+    lebensdauer: "24 stunden"
+    
+  Kristalle:
+    definition: "Aha-Momente - bringen Licht ins Dunkel"
+    klarheit: 0.9
+    lebensdauer: "permanent"

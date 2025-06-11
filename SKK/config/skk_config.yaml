@@ -1,0 +1,53 @@
+# SKK-System Konfiguration
+# ========================
+
+skk_system:
+  version: "2.0"
+  description: "Strudel-Knoten-Kristalle Bedeutungsfeld-Analyse"
+  
+bedeutungsfelder:
+  flügel:
+    description: "Entstehende Bedeutungen im Zwischenraum"
+    markers: ["ahnung", "gefühl", "spüre", "entsteh", "drang", "sehnsucht"]
+    threshold: 1  # Minimum 1 Marker für Flügel
+    retention: "15min"
+    
+  strudel:
+    description: "Anziehungspunkte für emergente Bedeutungen"
+    formation: "2+ Flügel"
+    hyperfokus_threshold: 10  # Warnung bei zu starker Anziehung
+    retention: "2h"
+    
+  knoten:
+    description: "Verfestigte Strukturen"
+    formation: "Strudel mit Anziehungskraft > 5"
+    rigidity_warning: 0.8  # Warnung bei zu starrer Struktur
+    retention: "24h"
+    
+  kristalle:
+    description: "Integrierte Erkenntnisse (Aha-Momente)"
+    formation: "2+ Knoten"
+    clarity_threshold: 0.8
+    retention: "permanent"
+
+performance:
+  chunk_size: 100  # Wörter pro Chunk
+  max_memory: "500MB"
+  processing_delay: 0.1  # Sekunden zwischen Chunks
+
+scheduler:
+  enabled: true
+  schedule: "0 23 * * *"  # Täglich 23:00
+  input_sources:
+    - "text_inputs/*.txt"
+    - "chat_logs/*.log"
+  
+output:
+  format: "yaml"
+  include_metadata: true
+  generate_references: true
+  
+alerts:
+  hyperfokus_warning: true
+  rigidity_warning: true
+  notification_email: ""
